@@ -17,7 +17,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var zipTitle: UILabel!
     @IBOutlet weak var zipField: UITextField!
     @IBOutlet weak var buyNow: UIButton!
-    @IBOutlet weak var imageSuccess: UIImageView!
+    
     
     let states = ["Alabama", "Kentucky", "Maine", "New-York", "Detroit"] // Array of states that can be selected
     
@@ -64,8 +64,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     @IBAction func buyNowPressed(_ sender: Any) {
-        imageSuccess.isHidden = false
+        
     }
+    
     
 }
 
