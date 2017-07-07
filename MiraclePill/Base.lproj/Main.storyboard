@@ -155,7 +155,14 @@
                                 <rect key="frame" x="50" y="690" width="314" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Buy Now"/>
+                                <connections>
+                                    <action selector="buyNowPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L6f-7a-fOv"/>
+                                </connections>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="MgT-5u-G2y">
+                                <rect key="frame" x="87" y="175" width="240" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -223,8 +230,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buyNow" destination="1xh-L4-6zJ" id="wYg-LD-1Ty"/>
                         <outlet property="countryField" destination="dB5-Ce-fSr" id="euq-sC-2pI"/>
                         <outlet property="countryTitle" destination="G2x-mT-HYT" id="tbz-w5-yrn"/>
+                        <outlet property="imageSuccess" destination="MgT-5u-G2y" id="93w-6b-6Z8"/>
                         <outlet property="statePicker" destination="BGh-XI-I4U" id="xGc-me-STe"/>
                         <outlet property="statePickerBtn" destination="QQB-Ba-azY" id="D6m-Js-G4D"/>
                         <outlet property="zipField" destination="pYq-Ur-D9m" id="FXT-SJ-Ltg"/>
@@ -238,5 +247,6 @@
     </scenes>
     <resources>
         <image name="miraclePillEmoji" width="90" height="90"/>
+        <image name="successIndicator" width="180" height="180"/>
     </resources>
 </document>
